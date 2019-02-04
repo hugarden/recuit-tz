@@ -78,6 +78,8 @@ $account = new Account();
 $account->id = 1;
 $account->email               = 'test@test.com';
 $account->password            = '12345';
+$account->options             = ['height' => 100, 'width' => 100];   
+
 $account->options['height']   = 200;           // 1. не должно вызывать ошибку
 $account->settings->color     = '#00AAAA';     // 1. не должно вызывать ошибку
 $account->settings->phone     = '9009333333';  // 1. не должно вызывать ошибку
