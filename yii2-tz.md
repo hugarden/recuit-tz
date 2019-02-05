@@ -88,8 +88,8 @@ $account->save();
 
 $account2 = Account::findOne(1);
 
-print_r($account->settings->color);     // 2. Должно вывести '#00AAAA'
-print_r($account->options);             // 2. Должно вывести массив ['hegiht' => 200, 'width' => 100]
+print_r($account2->settings->color);     // 2. Должно вывести '#00AAAA'
+print_r($account2->options);             // 2. Должно вывести массив ['hegiht' => 200, 'width' => 100]
 
 $account2->settings->color = 'test123';
 $account2->validate(); 
