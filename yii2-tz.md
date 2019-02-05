@@ -67,10 +67,11 @@ class SettingsJson extends \yii\base\Model implements \JsonSerializable {
 ## Задача:
        
 Реализовать классы 
-- **TrickyModel**, 
-- **JsonValidator**, 
-- PhoneValidator
-- **ColorValidator** 
+- **TrickyModel**,      - базовая модель
+- **JsonValidator**,    - валидатор массива и объекта указанного класса
+- PhoneValidator        - валидатор телефонного номера
+- **ColorValidator**    - валидатор формата цвета
+
 с которыми возможен данный сценарий:
 
 ```php
