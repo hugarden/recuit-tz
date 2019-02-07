@@ -11,8 +11,8 @@ $this->createTable('{{%account}}', [
     'id'                    => $this->pk(),
     'email'                 => $this->string(),
     'password'              => $this->string(),
-    'settings'              => $this->json('{"color":"#00FF00","phone":null}'),
-    'options'               => $this->json('{"height":100,"width":100}'),
+    'settings'              => $this->json(), //{"color":"#00FF00","phone":null}
+    'options'               => $this->json(), //{"height":100,"width":100}
 ]);
 ```
 
