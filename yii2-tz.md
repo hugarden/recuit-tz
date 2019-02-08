@@ -69,8 +69,8 @@ class SettingsJson extends \yii\base\Model implements \JsonSerializable {
 Реализовать классы 
 - **TrickyModel**,      - базовая модель наследник от yiiшного ActiveRecord которая позволит работать с типом json так как указано в сценарии 
 - **JsonValidator**,    - валидатор массива и объекта указанного класса
-- PhoneValidator        - валидатор телефонного номера
-- **ColorValidator**    - валидатор формата цвета
+- **PhoneValidator**    - валидатор телефонного номера  (можно взять из инета)
+- **ColorValidator**    - валидатор формата цвета (можно взять из инета)
 
 с которыми возможен данный сценарий:
 
@@ -123,4 +123,7 @@ $options = $account->options;
 $options['height'] = 200;
 $account->options = $options
 ```
-        
+
+Пожалуйста уделите больше внимания реализации **TrickyModel** и **JsonValidator**. 
+
+Реализацию **PhoneValidator** и **ColorValidator** можно взять из интернета. Если напишете сами это будет плюсом, но это не является основной задачей в данном ТЗ.
