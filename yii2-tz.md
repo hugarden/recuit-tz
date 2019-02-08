@@ -67,7 +67,7 @@ class SettingsJson extends \yii\base\Model implements \JsonSerializable {
 ## Задача:
        
 Реализовать классы 
-- **TrickyModel**,      - базовая модель наследник от yiiшного ActiveRecord в которой и нужно реализовать функционал
+- **TrickyModel**,      - базовая модель наследник от yiiшного ActiveRecord которая позволит работать с типом json так как указано в сценарии 
 - **JsonValidator**,    - валидатор массива и объекта указанного класса
 - PhoneValidator        - валидатор телефонного номера
 - **ColorValidator**    - валидатор формата цвета
