@@ -8,7 +8,7 @@
 
 ```php
 $this->createTable('{{%account}}', [
-    'id'                    => $this->pk(),
+    'id'                    => $this->primaryKey(),
     'email'                 => $this->string(),
     'password'              => $this->string(),
     'settings'              => $this->json(), //{"color":"#00FF00","phone":null}
@@ -35,6 +35,7 @@ class Account extends TrickyModel {
         ['id', 'number','integerOnly'=>true],
         ['email', 'email'],
         ['password', 'string'],
+        ['options', JsonValidator::class],
         ['settings', JsonValidator::class, 'model' => SettingsJson:class],
       ];
     }
